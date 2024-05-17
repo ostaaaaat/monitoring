@@ -8,18 +8,15 @@
               Мониторинг<br>микроклимата
             </span>
           </div>
-          <q-space />
           <div class="col-auto">
-            <q-tabs
-              v-model="tab"
-              class="text-black">
-              <q-tab name="download" icon="download" label="Загрузка" />
-              <q-tab name="graph" icon="show_chart" label="Графики" />
-              <q-tab name="diagram" icon="bubble_chart" label="Диаграммы" />
-              <q-tab name="heatmap" icon="layers" label="Тепловые карты" />
-              <q-tab name="statistics" icon="bar_chart" label="Статистика" />
-              <q-tab name="report" icon="description" label="Отчет" />
-            </q-tabs>
+            <q-btn-group flat>
+              <q-btn class="q-px-sm" icon="download" label="Загрузка" @click="$router.push({ name: 'Download' })" />
+              <q-btn class="q-px-sm" icon="show_chart" label="Графики" @click="$router.push({ name: 'Graph' })" />
+              <q-btn class="q-px-sm" icon="bubble_chart" label="Диаграммы" @click="$router.push({ name: 'Diagram' })" />
+              <q-btn class="q-px-sm" icon="layers" label="Тепловые карты" @click="$router.push({ name: 'Heatmap' })" />
+              <q-btn class="q-px-sm" icon="bar_chart" label="Статистика" @click="$router.push({ name: 'Statistics' })" />
+              <q-btn class="q-px-sm" icon="description" label="Отчет" @click="$router.push({ name: 'Report' })" />
+            </q-btn-group>
           </div>
         </div>
       </q-toolbar>
@@ -30,15 +27,12 @@
   </q-layout>
 </template>
 
-<style>
-/* Ваши стили */
-</style>
-
 <script>
-import router from './router'
 export default {
-  name: 'App',
-  router
+  name: 'App'
 }
 </script>
 
+<style>
+/* Ваши стили */
+</style>

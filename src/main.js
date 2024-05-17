@@ -6,5 +6,11 @@ import 'quasar/dist/quasar.css';
 import '@quasar/extras/material-icons/material-icons.css';
 import router from './router'
 
-createApp(App).use(Quasar, quasarUserOptions).mount('#app').use(router)
+const app = createApp(App)
+
+app.use(Quasar, quasarUserOptions)
+
+app.use(router)
+
+app.mount('#app')
 
