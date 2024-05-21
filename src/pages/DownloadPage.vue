@@ -20,7 +20,7 @@
           <q-btn
             label="Загрузить"
             color="light-green-14"
-            class="text-black"
+            class="text-white"
             @click="uploadFile"
             :disable="!file"
           />
