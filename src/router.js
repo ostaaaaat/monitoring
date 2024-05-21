@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from './pages/HomePage.vue';
 import DownloadPage from './pages/DownloadPage.vue'
 import GraphPage from './pages/GraphPage.vue'
 import DiagramPage from './pages/DiagramPage.vue'
@@ -6,6 +7,11 @@ import HeatmapPage from './pages/HeatmapPage.vue'
 import ReportPage from './pages/ReportPage.vue'
 
 const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: HomePage,
+  },
   {
     path: '/download',
     name: 'Download',

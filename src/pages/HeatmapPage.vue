@@ -98,7 +98,7 @@ export default {
 
       const colorScale = d3.scaleLinear()
         .domain([0, d3.max(this.heatmapData, d => d.value)])
-        .range(['yellow', 'green']);
+        .range(['blue', 'red']);
 
       // Отрисовка прямоугольников для каждой точки данных
       g.selectAll('rect')

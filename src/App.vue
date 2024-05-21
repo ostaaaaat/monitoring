@@ -3,8 +3,8 @@
     <q-header elevated class="bg-grey-4 text-black">
       <q-toolbar>
         <div class="row items-center justify-between">
-          <div class="col-auto q-mr-lg q-ml-lg">
-            <span class="text-h5">
+          <div class="col-auto q-mr-lg q-ml-lg" @click="goToHome">
+            <span class="text-h5 cursor-pointer">
               Мониторинг<br>микроклимата
             </span>
           </div>
@@ -26,12 +26,18 @@
   </q-layout>
 </template>
 
+<style>
+
+</style>
+
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    goToHome() {
+      this.$router.push({ name: 'Home' });
+    }
+  }
 }
 </script>
 
-<style>
-/* Ваши стили */
-</style>
