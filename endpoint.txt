@@ -1,0 +1,52 @@
+--Загрузка данных
+Endpoint: /download
+Метод: POST
+На вход: csv файл с полями
+Описание: Добавляет новые записи в бд
+CREATE TABLE climate_data (
+    id SERIAL PRIMARY KEY,
+    date TIMESTAMP NOT NULL,
+    temperature FLOAT NOT NULL,
+    humidity FLOAT NOT NULL,
+    pollution FLOAT NOT NULL,
+    latitude DECIMAL(9,6) NOT NULL,
+    longitude DECIMAL(9,6) NOT NULL
+);
+
+--Графики
+Endpoint: /graphs
+Метод: GET
+Описание: Возвращает записи, отфильтрованные по параметру, диапазону даты и группировке
+Параметры: parametr(temperature,humidity,pollution), date_from, date_to, grouping
+На выход: 
+{
+	points: [ {timestamp: '17-05-2024', value: 22} ],
+	mean: 12,
+	median: 15,
+	stDeviation: 16,
+	deviationOfMean: 17,
+	abnormal: [ 12, 15, 15 ]
+}
+
+--Диаграмма
+Endpoint: /diagrams
+Метод: GET
+Описание: Возвращает записи о температуре, отфильтрованные по месяцу/году
+Параметры: parametr(temperature,humidity,pollution), date_from, date_to
+На выход: 
+{
+	points: [ {x:10, y:15} ]
+}
+
+--Тепловая карта
+Endpoint: /heatmaps
+Метод: GET
+Описание: Возвращает записи о температуре, отфильтрованные по координатному промежутку
+Параметры: parametr(temperature,humidity,pollution), range ({x: 30.00000, y: 39.99999}, {x: 40.00000, y: 49.99999}, {x: 50.00000, y: 59.99999}) 
+На выход: 
+{
+	points: [ {x: 30.50105, y: 50.54896, value: 16} ],
+	xDomain: [30.0, 31.0],
+	yDomain: [50.0, 51.0]
+}
+	
