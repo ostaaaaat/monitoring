@@ -25,6 +25,7 @@
               color="light-green-14"
               class="q-ml-md q-mt-md q-pa-sm"
               @click="showHeatmap"
+              style="max-height: 40px;"
               :disable="!selectedParameter || !selectedRegion"
             />
           </div>
@@ -50,14 +51,14 @@ export default {
       selectedParameter: null,
       selectedRegion: null,
       parameters: [
-        { label: 'Температура', value: 'parameter1' },
-        { label: 'Влажность', value: 'parameter2' },
-        { label: 'CO2', value: 'parameter3' },
+        { label: 'Температура', value: 'temperature' },
+        { label: 'Влажность', value: 'humidity' },
+        { label: 'Уровень загрязнения', value: 'pollution' },
       ],
       regions: [
-        { label: 'Район 1', value: 'region1' },
-        { label: 'Район 2', value: 'region2' },
-        { label: 'Район 3', value: 'region3' },
+        { label: 'Район 1 (30.00000; 39.99999)', value: {x: 30.00000, y: 39.99999} },
+        { label: 'Район 2 (40.00000; 49.99999)', value: {x: 40.00000, y: 49.99999} },
+        { label: 'Район 3 (50.00000; 59.99999)', value: {x: 50.00000, y: 59.99999} },
       ],
       heatmapData: [
         { x: 30.5010, y: 50.5489, value: 16 },
@@ -118,6 +119,20 @@ export default {
 
       g.append('g')
         .call(d3.axisLeft(yScale).tickFormat(d => d.toFixed(2)));
+
+      // Подписи осей
+      g.append('text')
+        .attr('text-anchor', 'end')
+        .attr('x', width / 2)
+        .attr('y', height + margin.top - 10)
+        .text('Долгота');
+
+      g.append('text')
+        .attr('text-anchor', 'end')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -height / 2)
+        .attr('y', -margin.left + 20)
+        .text('Широта');
 
       // Добавление легенды
       const legend = heatmapSvg.append('g')
