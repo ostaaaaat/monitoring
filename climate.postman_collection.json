@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "4289978f-4604-4ae1-8a59-15db9c4f80ca",
+		"name": "climate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/sanis/Documents/data.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/upload",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/graphs?parametr=temperature&date_from=2021-06-01&date_to=2021-06-30&grouping=day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/graphs?parametr=temperature&date_from=2021-06-01&date_to=2021-06-30&grouping=day",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"graphs"
+					],
+					"query": [
+						{
+							"key": "parametr",
+							"value": "temperature"
+						},
+						{
+							"key": "date_from",
+							"value": "2021-06-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2021-06-30"
+						},
+						{
+							"key": "grouping",
+							"value": "day"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/graphs?parametr=humidity&date_from=2021-06-01&date_to=2021-08-31&grouping=month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/graphs?parametr=humidity&date_from=2021-06-01&date_to=2021-08-31&grouping=month",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"graphs"
+					],
+					"query": [
+						{
+							"key": "parametr",
+							"value": "humidity"
+						},
+						{
+							"key": "date_from",
+							"value": "2021-06-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2021-08-31"
+						},
+						{
+							"key": "grouping",
+							"value": "month"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/graphs?parametr=pollution&date_from=2021-01-01&date_to=2021-12-31&grouping=year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/graphs?parametr=pollution&date_from=2021-01-01&date_to=2021-12-31&grouping=year",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"graphs"
+					],
+					"query": [
+						{
+							"key": "parametr",
+							"value": "pollution"
+						},
+						{
+							"key": "date_from",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2021-12-31"
+						},
+						{
+							"key": "grouping",
+							"value": "year"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/diagrams?parametr=temperature&date_from=2021-06-01&date_to=2021-06-30",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/diagrams?parametr=temperature&date_from=2021-06-01&date_to=2021-06-30",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"diagrams"
+					],
+					"query": [
+						{
+							"key": "parametr",
+							"value": "temperature"
+						},
+						{
+							"key": "date_from",
+							"value": "2021-06-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2021-06-30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/heatmaps?parametr=temperature&lat_min=9&lat_max=37.8049&lon_min=-122.4194&lon_max=-122.3494",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/heatmaps?parametr=temperature&lat_min=9&lat_max=37.8049&lon_min=-122.4194&lon_max=-122.3494",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"heatmaps"
+					],
+					"query": [
+						{
+							"key": "parametr",
+							"value": "temperature"
+						},
+						{
+							"key": "lat_min",
+							"value": "9"
+						},
+						{
+							"key": "lat_max",
+							"value": "37.8049"
+						},
+						{
+							"key": "lon_min",
+							"value": "-122.4194"
+						},
+						{
+							"key": "lon_max",
+							"value": "-122.3494"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
