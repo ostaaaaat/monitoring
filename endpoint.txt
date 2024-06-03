@@ -1,5 +1,5 @@
 --Загрузка данных
-Endpoint: /download
+Endpoint: /upload
 Метод: POST
 На вход: csv файл с полями
 Описание: Добавляет новые записи в бд
@@ -42,7 +42,8 @@ Endpoint: /diagrams
 Endpoint: /heatmaps
 Метод: GET
 Описание: Возвращает записи о температуре, отфильтрованные по координатному промежутку
-Параметры: parametr(temperature,humidity,pollution), range ({x: 30.00000, y: 39.99999}, {x: 40.00000, y: 49.99999}, {x: 50.00000, y: 59.99999}) 
+Параметры: parametr(temperature,humidity,pollution), range ({ lat_min: 30.00000,   lat_max: 39.99999, lon_min: 30.00000,   lon_max: 39.99999}, { lat_min: 30.00000,   lat_max: 39.99999, lon_min: 30.00000,   lon_max: 39.99999}, { lat_min: 30.00000,   lat_max: 39.99999, lon_min: 30.00000,   lon_max: 39.99999}) 
+Параметры: parametr(temperature,humidity,pollution), range ({ lat_min: 30.00000,   lat_max: 39.99999, lon_min: 30.00000,   lon_max: 39.99999}, { lat_min: 30.00000,   lat_max: 39.99999, lon_min: 30.00000,   lon_max: 39.99999}, { lat_min: 30.00000,   lat_max: 39.99999, lon_min: 30.00000,   lon_max: 39.99999}) 
 На выход: 
 {
 	points: [ {x: 30.50105, y: 50.54896, value: 16} ],
