@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" modified="2024-06-03T08:33:34.586Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="RjIn5aHAOWzc15yYYn6U" version="24.4.10" type="device">
+  <diagram name="Страница — 1" id="XrrPbe4w0qdBMq4fLtTc">
+    <mxGraphModel dx="1084" dy="1187" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="nS1O5j5OaEgGV68RkNVF-1" target="nS1O5j5OaEgGV68RkNVF-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="169" y="-154" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="nS1O5j5OaEgGV68RkNVF-2" target="nS1O5j5OaEgGV68RkNVF-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-2" value="Получение запроса от клиентской части с параметрами для визуализации" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="114" y="-79" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="nS1O5j5OaEgGV68RkNVF-4" target="nS1O5j5OaEgGV68RkNVF-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-4" value="Построение SQL-запроса в зависимости от выбранных параметров" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="114" y="10" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="nS1O5j5OaEgGV68RkNVF-6" target="nS1O5j5OaEgGV68RkNVF-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-6" value="Получение данных в виде DataFrame" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="114" y="98" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="nS1O5j5OaEgGV68RkNVF-9" target="nS1O5j5OaEgGV68RkNVF-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oPCvAJEYl8rbna4mpd78-1" value="Дни" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="nS1O5j5OaEgGV68RkNVF-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.1594" y="3" relative="1" as="geometry">
+            <mxPoint x="-6" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="nS1O5j5OaEgGV68RkNVF-9" target="nS1O5j5OaEgGV68RkNVF-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oPCvAJEYl8rbna4mpd78-2" value="Месяцы/Годы" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="nS1O5j5OaEgGV68RkNVF-22" vertex="1" connectable="0">
+          <mxGeometry x="-0.1727" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-9" value="Параметр группировки" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="72.5" y="181" width="241" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="nS1O5j5OaEgGV68RkNVF-11" target="nS1O5j5OaEgGV68RkNVF-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-11" value="Группировка не требуется, данные остаются в исходном виде" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-44" y="284" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-23" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="nS1O5j5OaEgGV68RkNVF-12" target="nS1O5j5OaEgGV68RkNVF-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-12" value="Данные группируются по последнему дню месяца/года" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="272" y="284" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="nS1O5j5OaEgGV68RkNVF-17" target="nS1O5j5OaEgGV68RkNVF-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-17" value="Вычисляется среднее значение за каждый месяц/год" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="272" y="372" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="nS1O5j5OaEgGV68RkNVF-18" target="nS1O5j5OaEgGV68RkNVF-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-18" value="Корректировка временных меток с помощью сдвига на один месяц/год назад" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="272" y="460" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS1O5j5OaEgGV68RkNVF-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="169" y="526" width="48" height="48" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-06-03T10:05:27.664Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="Y9uzb6m6y_YtCXmuFI8O" version="24.4.13" type="device">
+  <diagram name="Страница — 1" id="taDzkRi6OpN1pIJOQzAA">
+    <mxGraphModel dx="712" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fLqptBVuulRMMGNZjQjW-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="fLqptBVuulRMMGNZjQjW-2" target="fLqptBVuulRMMGNZjQjW-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="fLqptBVuulRMMGNZjQjW-4" target="fLqptBVuulRMMGNZjQjW-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-4" value="Фильтрация исходных данных по аномальным значениям" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="100" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="fLqptBVuulRMMGNZjQjW-6" target="fLqptBVuulRMMGNZjQjW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-6" value="Извлечение дат из отфильтрованных записей" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="170" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="fLqptBVuulRMMGNZjQjW-8" target="fLqptBVuulRMMGNZjQjW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-8" value="Получение списка дат с аномальными значениями" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="240" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fLqptBVuulRMMGNZjQjW-11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="310" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-06-03T09:59:12.396Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="S4CHXvyQlLl9vv6rAhGX" version="24.4.13" type="google">
+  <diagram name="Страница — 1" id="mkiF-4eJNNi6CASZcNvs">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="A9Bi7sY91Zstj8V-QZ1I-1" target="A9Bi7sY91Zstj8V-QZ1I-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="A9Bi7sY91Zstj8V-QZ1I-2" target="A9Bi7sY91Zstj8V-QZ1I-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-2" value="Определение количества аномальных значений" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="100" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="A9Bi7sY91Zstj8V-QZ1I-4" target="A9Bi7sY91Zstj8V-QZ1I-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-4" value="Определение общего количества значений" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="170" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="A9Bi7sY91Zstj8V-QZ1I-6" target="A9Bi7sY91Zstj8V-QZ1I-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-6" value="Расчет процента аномалий" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="240" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="A9Bi7sY91Zstj8V-QZ1I-8" target="A9Bi7sY91Zstj8V-QZ1I-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-8" value="Получение результирующего процента аномальных значений&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A9Bi7sY91Zstj8V-QZ1I-9" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="390" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
