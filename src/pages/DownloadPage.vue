@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import api from '@/api';
+
 export default {
   name: 'DownloadPage',
   data() {
@@ -39,9 +41,15 @@ export default {
     };
   },
   methods: {
-    uploadFile() {
+    async uploadFile() {
       if (this.file) {
-        console.log('Загружаемый файл:', this.file);
+        try {
+          const response = await api.uploadCsv(this.file);
+          console.log('Файл успешно загружен:', response);
+          this.file = null;
+        } catch (error) {
+          console.error('Ошибка при загрузке файла:', error);
+        }
       }
     },
   },
