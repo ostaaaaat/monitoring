@@ -1,5 +1,5 @@
 from typing import Dict
-
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile, Query
 from fastapi.responses import JSONResponse
 from fastapi.requests import Request
@@ -11,14 +11,25 @@ from sqlalchemy import text
 
 app = FastAPI()
 
-DB_USER = "climate_app"
-DB_PASSWORD = "12358"
-DB_NAME = "climate_data"
+DB_USER = "postgres"
+DB_PASSWORD = "12345"
+DB_NAME = "monitoring"
 DB_HOST = "localhost"
 DB_PORT = 5432
 
 engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
 
+origins = [
+    "http://localhost:8080",  # Адрес Vue.js приложения
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/upload")
 async def upload_csv(file: UploadFile = File(...)):
@@ -65,14 +76,20 @@ async def get_graphs(
 
     # Identify abnormal values (e.g., 2 standard deviations away from the mean)
     abnormal_threshold = 1
-    abnormal_values = [value for timestamp, value, z_score in zip(grouped_df['timestamp'], grouped_df['value'], z_scores) if abs(z_score) > abnormal_threshold]
+    abnormal_values = [value for timestamp, value, z_score in
+                       zip(grouped_df['timestamp'], grouped_df['value'], z_scores) if abs(z_score) > abnormal_threshold]
+    abnormal_dates = [timestamp for timestamp, value, z_score in
+                      zip(grouped_df['timestamp'], grouped_df['value'], z_scores) if abs(z_score) > abnormal_threshold]
 
     response = {
-        "points": [{"timestamp": timestamp, "value": value} for timestamp, value in zip(grouped_df['timestamp'], grouped_df['value'])],
+        "points": [{"timestamp": timestamp, "value": value} for timestamp, value in
+                   zip(grouped_df['timestamp'], grouped_df['value'])],
         "mean": mean,
         "median": median,
         "stDeviation": st_deviation,
-        "abnormal": abnormal_values
+        "abnormalValues": abnormal_values,
+        "abnormalDates": abnormal_dates,
+        "abnormalShare": len(abnormal_values) / len(grouped_df)
     }
     return response
 
